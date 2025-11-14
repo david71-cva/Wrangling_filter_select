@@ -112,7 +112,6 @@ One more useful way to filter a character variable is to base it on part of the 
 ```{r}
 movies %>%
   filter(str_detect(title, "Batman"))
-
 # Which Batman movies are in the dataset?
 ```
 
@@ -230,8 +229,11 @@ After running gthe code I found 4 movies that meet those requirements.
 3. Create a subset of only Harry Potter movies with the title, rating, budget, and votes. Which movies are included in this data? Which is highest rated? Which has the most votes on IMDb.com?
 
 ```{r}
-
+movies %>%
+  filter(str_detect(title, "Harry Potter"))
 ```
+
+After looking at the code I saw that there are 3 movies with the title Harry Potter in it.Chamber of secrets, Prisoner of Azkabean, and the Sorcerer's Stone. The one with the highets rating was the Prisoner of azkaban and the one with the highest vote being the Sorcerer's stone. 
 
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?
 
